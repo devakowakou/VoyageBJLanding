@@ -1,4 +1,4 @@
-import { Search, PenTool, CreditCard, Smartphone } from "lucide-react";
+import { Search, Ticket, CreditCard, Smartphone } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SectionWrapper } from "../section-wrapper";
 
@@ -9,7 +9,7 @@ const features = [
     description: "Trouvez votre trajet idéal en un clin d'œil grâce à notre moteur de recherche puissant et intuitif.",
   },
   {
-    icon: PenTool,
+    icon: Ticket,
     title: "Réservation simplifiée",
     description: "Quelques clics suffisent pour réserver votre place. Choisissez même vos sièges sur certains trajets.",
   },
