@@ -41,7 +41,11 @@ function Rating({ rating }: { rating: number }) {
   return (
     <div className="flex items-center justify-center gap-1 text-primary">
       {[...Array(5)].map((_, i) => (
-        <Star key={i} className="h-5 w-5 text-yellow-400" filled={i < rating} />
+        <Star 
+          key={`star-${rating}-${i}`} 
+          className="h-5 w-5 text-yellow-400" 
+          filled={i < rating} 
+        />
       ))}
     </div>
   );

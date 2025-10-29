@@ -35,9 +35,9 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
 }
 
 
-export function Star({ className, ...props }: SVGProps<SVGSVGElement> & { filled?: boolean }) {
-    const fillClass = props.filled ? "text-yellow-400" : "text-gray-300";
-    const strokeClass = props.filled ? "text-yellow-400" : "text-gray-300";
+export function Star({ className, filled = false, ...props }: SVGProps<SVGSVGElement> & { filled?: boolean }) {
+    const fillClass = filled ? "text-yellow-400" : "text-gray-300";
+    const strokeClass = filled ? "text-yellow-400" : "text-gray-300";
   
     return (
       <svg
@@ -45,7 +45,7 @@ export function Star({ className, ...props }: SVGProps<SVGSVGElement> & { filled
         width="24"
         height="24"
         viewBox="0 0 24 24"
-        fill={props.filled ? "currentColor" : "none"}
+        fill={filled ? "currentColor" : "none"}
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"

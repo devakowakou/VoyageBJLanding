@@ -45,7 +45,7 @@ export function Footer() {
                 <Link href="/" className="mb-4 inline-block">
                     <Logo className="h-8 w-auto" />
                 </Link>
-                <p className="text-sm">Voyager n’a jamais été aussi simple au Bénin ✨</p>
+                <p className="text-sm">Voyager n’a jamais été aussi simple au Bénin </p>
             </div>
           
             <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">

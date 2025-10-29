@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Réservez vos billets de transport en quelques clics. Comparez, choisissez, et partez sereinement avec VoyageBJ.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://voyagebj.com', // Replace with actual URL
+    url: 'https://voyagebj.com', 
     siteName: 'VoyageBJ',
   }
 };
