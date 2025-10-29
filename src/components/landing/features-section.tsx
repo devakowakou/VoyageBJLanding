@@ -27,7 +27,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <SectionWrapper id="features">
+    <SectionWrapper id="features" className="bg-card">
       <div className="text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
           Fonctionnalités clés
