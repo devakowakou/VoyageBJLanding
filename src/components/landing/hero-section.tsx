@@ -58,27 +58,12 @@ export function HeroSection() {
 
   return (
     <section className="relative w-full pt-20 pb-16 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-            {heroImage && (
-                <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={heroImage.imageHint}
-                priority
-                />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
-            <div className="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
-        </div>
-
-      <div className="container relative z-10 text-center text-primary-foreground">
+      <div className="container relative z-10 text-center">
         <div className="flex flex-col items-center">
-            <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-white">
-            Réservez vos billets de transport en <span className="text-emerald-300">quelques clics</span> 🚍
+            <h1 className="font-headline text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+            Réservez vos billets de transport en <span className="text-primary">quelques clics</span> 🚍
             </h1>
-            <p className="mt-4 max-w-2xl text-lg text-gray-200 sm:text-xl">
+            <p className="mt-4 max-w-2xl text-lg text-muted-foreground sm:text-xl">
             Comparez, choisissez, et partez sereinement avec VoyageBJ. Voyager n’a jamais été aussi simple au Bénin ✨
             </p>
         </div>
