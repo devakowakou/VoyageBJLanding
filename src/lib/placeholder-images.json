@@ -7,10 +7,10 @@
       "imageHint": "bus road"
     },
     {
-      "id": "about-traveler",
-      "description": "A photo of a happy traveler.",
-      "imageUrl": "https://images.unsplash.com/photo-1612304217429-1ec0a0c022ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMHRyYXZlbGVyfGVufDB8fHx8MTc2MTczMTA4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy traveler"
+      "id": "about-bus-traveler",
+      "description": "A photo of a happy traveler in front of a bus.",
+      "imageUrl": "https://images.unsplash.com/photo-1623326114493-2415d85c464a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBpbiUyMGZyb250JTIwb2YlMjBidXN8ZW58MHx8fHwxNzYyNTM3ODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man bus"
     },
     {
       "id": "partners-dashboard",
