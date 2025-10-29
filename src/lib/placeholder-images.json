@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bus",
+      "description": "An illustration of a bus on a stylized map of Benin with an animated trajectory.",
+      "imageUrl": "https://images.unsplash.com/photo-1678210111494-590360e6d282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxidXMlMjByb2FkfGVufDB8fHx8MTc2MTczMTA4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bus road"
+    },
+    {
+      "id": "about-traveler",
+      "description": "A photo of a happy traveler.",
+      "imageUrl": "https://images.unsplash.com/photo-1612304217429-1ec0a0c022ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMHRyYXZlbGVyfGVufDB8fHx8MTc2MTczMTA4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy traveler"
+    },
+    {
+      "id": "partners-dashboard",
+      "description": "A mockup of the admin dashboard for transport companies.",
+      "imageUrl": "https://images.unsplash.com/photo-1631006732121-a6da2f4864d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFzaGJvYXJkJTIwbW9ja3VwfGVufDB8fHx8MTc2MTczMTA4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard mockup"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Avatar for the first testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1701615004837-40d8573b6652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc2MTY1NDI2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "user avatar"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for the second testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc2MTY1NDI2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "user avatar"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Avatar for the third testimonial.",
+      "imageUrl": "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc2MTY1NDI2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "user avatar"
+    }
+  ]
 }
