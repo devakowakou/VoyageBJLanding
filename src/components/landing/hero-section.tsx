@@ -6,7 +6,6 @@ import { z } from "zod";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
 import { CalendarIcon, MapPin, ArrowRight, Search } from "lucide-react";
-import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -25,7 +24,6 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const searchSchema = z.object({
   departure: z.string().min(1, "La ville de départ est requise."),
@@ -39,7 +37,6 @@ type SearchFormValues = z.infer<typeof searchSchema>;
 
 export function HeroSection() {
   const { toast } = useToast();
-  const heroImage = PlaceHolderImages.find((img) => img.id === "hero-bus");
 
   const form = useForm<SearchFormValues>({
     resolver: zodResolver(searchSchema),
@@ -57,13 +54,25 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative w-full pt-20 pb-16 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
-      <div className="container relative z-10 text-center">
+    <section className="relative w-full h-[80vh] flex items-center justify-center text-white overflow-hidden">
+        <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
+        >
+            <source src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+
+      <div className="container relative z-20 text-center">
         <div className="flex flex-col items-center">
-            <h1 className="font-headline text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Réservez vos billets de transport en <span className="text-primary">quelques clics</span> 🚍
             </h1>
-            <p className="mt-4 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            <p className="mt-4 max-w-2xl text-lg text-gray-200 sm:text-xl">
             Comparez, choisissez, et partez sereinement avec VoyageBJ. Voyager n’a jamais été aussi simple au Bénin ✨
             </p>
         </div>
@@ -72,7 +81,7 @@ export function HeroSection() {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="p-4 bg-background/80 backdrop-blur-sm rounded-lg shadow-2xl border"
+              className="p-4 bg-background/90 backdrop-blur-sm rounded-lg shadow-2xl border"
             >
               <div className="grid grid-cols-1 md:grid-cols-10 gap-4 items-start">
                 <div className="md:col-span-3">
