@@ -25,6 +25,7 @@ const footerLinks = [
     { href: "/", label: "Accueil" },
     { href: "#about", label: "À propos" },
     { href: "#features", label: "Fonctionnalités" },
+    { href: "#testimonials", label: "Avis" },
     { href: "#contact", label: "Contact" },
 ];
 

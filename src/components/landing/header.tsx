@@ -12,8 +12,8 @@ const navLinks = [
   { href: "/", label: "Accueil" },
   { href: "#about", label: "À propos" },
   { href: "#features", label: "Fonctionnalités" },
-  { href: "#partners", label: "Partenaires" },
-  { href: "#testimonials", label: "Témoignages" },
+  { href: "#testimonials", label: "Avis" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -21,11 +21,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Logo className="h-6 w-auto" />
-        </Link>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+      <div className="container flex h-16 max-w-screen-2xl items-center">
+        <div className="flex-1 flex justify-start">
+            <Link href="/" className="flex items-center space-x-2">
+              <Logo className="h-6 w-auto" />
+            </Link>
+        </div>
+        
+        <nav className="hidden md:flex flex-1 justify-center items-center space-x-6 text-sm font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -36,8 +39,10 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center justify-end flex-1 space-x-2">
+        
+        <div className="flex flex-1 items-center justify-end space-x-2">
           <div className="hidden md:flex items-center space-x-2">
+            <Button>Devenir partenaire</Button>
             <ThemeToggle />
           </div>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -73,6 +78,7 @@ export function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col space-y-4">
+                    <Button>Devenir partenaire</Button>
                   <div className="flex justify-between items-center rounded-md border p-2">
                     <span>Changer de thème</span>
                     <ThemeToggle />
