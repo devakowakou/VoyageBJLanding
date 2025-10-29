@@ -3,7 +3,7 @@ import { SectionWrapper } from "@/components/section-wrapper";
 
 export function TeamSection() {
   return (
-    <SectionWrapper>
+    <SectionWrapper className="bg-card">
       <div className="max-w-4xl mx-auto text-center bg-card p-8 md:p-12 rounded-lg shadow-lg">
         <h2 className="font-headline text-3xl font-bold tracking-tight text-primary sm:text-4xl">
           Une équipe passionnée par l'innovation
