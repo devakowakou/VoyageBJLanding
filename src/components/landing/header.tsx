@@ -2,18 +2,18 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Bus } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { cn } from "@/lib/utils";
 import { Logo } from "@/components/icons";
 
 const navLinks = [
+  { href: "/", label: "Accueil" },
   { href: "#about", label: "À propos" },
   { href: "#features", label: "Fonctionnalités" },
-  { href: "#testimonials", label: "Avis" },
-  { href: "#contact", label: "Contact" },
+  { href: "#partners", label: "Partenaires" },
+  { href: "#testimonials", label: "Témoignages" },
 ];
 
 export function Header() {
@@ -38,9 +38,6 @@ export function Header() {
         </nav>
         <div className="flex items-center justify-end flex-1 space-x-2">
           <div className="hidden md:flex items-center space-x-2">
-            <Button asChild variant="outline" className="border-accent hover:bg-accent/10">
-              <Link href="#partners">Devenir partenaire</Link>
-            </Button>
             <ThemeToggle />
           </div>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -76,9 +73,6 @@ export function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col space-y-4">
-                  <Button asChild variant="outline" className="border-accent hover:bg-accent/10">
-                    <Link href="#partners">Devenir partenaire</Link>
-                  </Button>
                   <div className="flex justify-between items-center rounded-md border p-2">
                     <span>Changer de thème</span>
                     <ThemeToggle />
