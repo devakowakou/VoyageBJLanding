@@ -60,9 +60,10 @@ export function HeroSection() {
             loop
             muted
             playsInline
+            poster="https://c.animaapp.com/mhbrpyo27hCoB0/img/ai_1-poster.png"
             className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
         >
-            <source src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            <source src="https://c.animaapp.com/mhbrpyo27hCoB0/img/ai_1.mp4" type="video/mp4" />
             Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
         <div className="absolute inset-0 bg-black/50 z-10"></div>
