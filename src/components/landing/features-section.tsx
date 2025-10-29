@@ -38,7 +38,7 @@ export function FeaturesSection() {
       </div>
       <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {features.map((feature, index) => (
-          <Card key={index} className="text-left bg-card p-4 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+          <Card key={index} className="text-left bg-card p-4 rounded-2xl transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105 hover:-translate-y-2">
             <CardHeader className="p-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground">
                 <feature.icon className="h-6 w-6" />
